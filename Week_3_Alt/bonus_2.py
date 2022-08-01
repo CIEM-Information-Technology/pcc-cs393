@@ -1,9 +1,11 @@
 from random import randint
 
+
 def coin_toss():
     r = randint(0, 1)
     outcomes = ['H', 'T']
     return outcomes[r]
+
 
 def three_in_a_row():
     toss_results = []
@@ -16,6 +18,7 @@ def three_in_a_row():
             else:
                 toss_results.append(coin_toss())
     return toss_results
+
 
 average_toss = 0
 

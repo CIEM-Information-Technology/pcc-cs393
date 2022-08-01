@@ -1,15 +1,15 @@
 from math import floor
 
 
-n = int(input("Enter a positive integer: "))
-l = n
+num = int(input("Enter a positive integer: "))
+last_num = num
 
-while l != 1:
-    if l % 2 == 0:
-        print(f"{l} ", end="")
-        l = floor(l / 2)
+while last_num != 1:
+    if last_num % 2 == 0:
+        print(f"{last_num} ", end="")
+        last_num = floor(last_num / 2)
     else:
-        print(f"{l} ", end="")
-        l = (l * 3) + 1
+        print(f"{last_num} ", end="")
+        last_num = (last_num * 3) + 1
 else:
     print("1 \n")
