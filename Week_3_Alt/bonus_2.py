@@ -24,5 +24,5 @@ for i in range(1, 11):
     average_toss += len(r)
     print(f"{str(r)} ({len(r)} tosses)")
 
-average_toss = average_toss / 10 
+average_toss = average_toss / 10
 print(f"Average {average_toss} tosses")
