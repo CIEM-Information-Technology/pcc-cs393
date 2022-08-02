@@ -1,10 +1,12 @@
 def checkPrime(num):
-    # implement error checking for numbers < 1
-    if num > 1:
+    if num >= 1:
         for i in range(2, num):
             if num % i == 0:
                 return False
-    return True
+    elif num < 1:
+        return False
+    else:
+        return True
 
 
 if __name__ == '__main__':
