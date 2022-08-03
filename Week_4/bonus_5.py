@@ -1,4 +1,5 @@
 from bonus_1 import leapYear
+from bonus_4 import ordinalDate
 
 
 def gregorianDate(day: int, year: int):
@@ -34,4 +35,18 @@ def gregorianDate(day: int, year: int):
                 month += 1
     return f"{day_of_month}-{month}-{year}"
 
-# # TODO: implement the function in main
+
+if __name__ == '__main__':
+    days = int(input("Enter the number of days: "))
+    date = input("Enter a date: ")
+    day, month, year = [int(i) for i in date.split()]
+
+    ordinal_days = ordinalDate(day, month, year)
+    days = days + ordinal_days
+
+    if days > 366 if leapYear(int(year)) else 366:
+        days = days - (366 if leapYear(year) else 365)
+        year = year + 1
+        print(gregorianDate(days, year))
+    else:
+        print(gregorianDate(days, year))
