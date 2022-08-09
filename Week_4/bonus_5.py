@@ -44,8 +44,9 @@ if __name__ == '__main__':
     ordinal_days = ordinalDate(day, month, year)
     days = days + ordinal_days
 
-    if days > 366 if leapYear(int(year)) else 366:
-        days = days - (366 if leapYear(year) else 365)
+    compare_days = 366 if leapYear(int(year)) else 365
+    if days > compare_days:
+        days = days - compare_days
         year = year + 1
         print(gregorianDate(days, year))
     else:
