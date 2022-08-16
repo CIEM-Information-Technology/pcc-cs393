@@ -3,7 +3,7 @@
 ## Questions
 1. Write a Python function to find if a number is even or odd. Implement the function in a python program.
 2. Write a Python function to find if which is the greater number of two numbers. Implement the function in a python program.
-3. Write a Python function to prove Pascal's principal. $$\frac{a}{b} = \frac{c}{d}$$.
+3. Write a Python function to prove Pascal's principal. $\frac{a}{b} = \frac{c}{d}$.
 4. Write a Python function to find if the given year is leap year or not. Implement the function.
 5. Write a Python function to find if the roots of a quadratic equation are imaginary, real or equal.
 
