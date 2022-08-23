@@ -1,10 +1,12 @@
-from question_3 import properDivisor
+from question_3 import proper_divisor
+
 
 def perfect_number(n: int):
-    if sum(properDivisor(n)) == n:
+    if sum(proper_divisor(n)) == n:
         return True
     else:
         return False
+
 
 if __name__ == '__main__':
     print("Perfect numbers within 1 and 10,000 are - ")

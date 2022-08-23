@@ -1,11 +1,17 @@
-def properDivisor(n: int):
+def proper_divisor(num: int):
+    """
+    find the proper divisors of a number
+    :param num: a number of integer type
+    :return: list of proper divisors
+    """
     divisors = []
-    for i in range(1, n):
-        if n % i == 0:
+    for i in range(1, num):
+        if num % i == 0:
             divisors.append(i)
     return divisors
 
+
 if __name__ == '__main__':
     n = int(input("Enter a number: "))
-    proper_divisors = properDivisor(n)
+    proper_divisors = proper_divisor(n)
     print("Proper divisors of n are ", proper_divisors)
